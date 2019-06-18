@@ -1,0 +1,82 @@
+//
+//  ViewController.m
+//  FeedBackApp
+//
+//  Created by Raviteja Nadella on 14/06/19.
+//  Copyright © 2019 HelicSysTechnologies. All rights reserved.
+//
+
+#import "ViewController.h"
+#import "EmployeeViewController.h"
+@interface ViewController ()
+//@property (weak, nonatomic) IBOutlet UILabel *excellentLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *goodLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *averageLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *badLabel;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+//    _excellentLabel.text = @"Excelent";
+//    _goodLabel.text = @"Good";
+//    _averageLabel.text = @"Average";
+//    _badLabel.text = @"Bad";
+    
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (IBAction)vgoodButton:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thanks"
+                                                    message:@"For Your Valuable Feedback."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+- (IBAction)goodButton:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thanks"
+                                                    message:@"For Your Valuable Feedback."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (IBAction)averageButton:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thanks"
+                                                    message:@"For Your Valuable Feedback."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (IBAction)employeeLoginButton:(id)sender {
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome"
+                                                    message:@"Enter Your Details."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+
+    
+    EmployeeViewController *Evc = [[EmployeeViewController alloc] initWithNibName:@"EmployeeViewController" bundle:nil];
+    [self.navigationController pushViewController:Evc animated:YES];
+    
+    
+}
+
+
+@end
